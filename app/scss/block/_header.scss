@@ -1,0 +1,95 @@
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.slider-item {
+        height: 100vh;
+        background-image: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        text-transform: uppercase;
+
+        &__info {
+            position: absolute;
+            right: 80px;
+            bottom: 116px;
+            text-align: right;
+            color: $main-txt;
+        }
+
+        &__info-subtitle {
+            margin-bottom: 5px;
+        }
+
+        &__info-title {
+            margin-bottom: 48px;
+            font-size: em(80);
+            line-height: 86px;
+            font-weight: 800;
+        }
+
+        &__info-subtext {
+            margin-bottom: 8px;
+        }
+
+        &__info-text {
+            font-weight: 800;
+            font-size: em(40);
+            line-height: 86px;
+        }
+    } // end slider__item
+
+.slider-arrows {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 4;
+
+    &__left {
+        right: 125px;
+    }
+} // end slider arrows
+
+.slider-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 36px;
+    max-width: 920px;
+    width: 100%;
+    color: $main-txt;
+
+    & .slick-current {
+
+        .dots-box {
+            border-top-color: $bd-active;
+        }
+    }
+}
+
+.dots-box {
+    width: 200px !important;
+    height: 28px;
+    border-top: 4px solid $bd-main;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+    }
+
+    &__number {
+        font-weight: 800;
+        font-size: em(24);
+        line-height: 34px;
+    }
+
+    &__name {
+        font-weight: 300;
+        line-height: 19px;
+    }
+}

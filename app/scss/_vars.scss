@@ -1,0 +1,33 @@
+// --main color variables
+// main content color
+$main-1st-color: #FFFFFF;
+$main-2nd-color: #4AF6CD;
+
+// elements color
+$main-map-dot: #4AF6CD;
+$main-star-dot: #4AF6CD;
+
+// background colors
+$main-bg: #FFFFFF;
+$main-bg-hover: #4AF6CD;
+
+// text colors
+$main-txt: #FFFFFF;
+$main-txt-hover: #4AF6CD;
+
+// border colors
+$bd-main: #FFFFFF;
+$bd-active: #4AF6CD;
+
+// link colors
+$main-link: #FFFFFF;
+$main-link-hover: #4AF6CD;
+$main-link-hover-bg: #4AF6CD;
+
+// --block color variables
+
+// em to px func
+
+@function em($px) {
+	@return ($px / 16) +em;
+}
